@@ -2,13 +2,15 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
 }
 /* Native styles overwrite */
 
 h1 {
   font-family: 'Roboto Mono';
   font-size: 65px;
-  color: #5D5D5D;
+  /*color: #5D5D5D;*/
+  color: white;
   text-transform: uppercase;
 }
 
@@ -90,6 +92,6 @@ img.profile {
   right: 10px;
   height: 50px;
   width: 300px;
-  padding: 0 10px 0 0;
+  padding: 0 15px 0 0;
   text-align: right;
 }

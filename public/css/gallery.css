@@ -1,0 +1,20 @@
+.gallery {
+  margin: auto;
+  height: 460px;
+  width: 100%;
+  overflow: scroll;
+}
+
+.innerGallery {
+  height: 100%;
+  width: 150%;
+}
+
+.item {
+  height: 200px;
+  width: 300px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+}

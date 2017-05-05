@@ -2,11 +2,10 @@ $(document).ready(function() {
 
   $('#fullpage').fullpage({
     anchors:['home', 'work', 'about'],
-    sectionsColor : ['#FF686B', '#ffe'],
+    sectionsColor : ['#FF686B', '#974A9F', '#98C1D9'],
     loopBottom: true,
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
-      console.log($(window).height());
 
       //make sectio title follow page
       if(index !== 1){
