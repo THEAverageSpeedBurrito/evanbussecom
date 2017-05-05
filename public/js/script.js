@@ -24,7 +24,7 @@ $(document).ready(function() {
           $('#sectionTitle').animate({
             top: 10,
           }, 200)
-          $('#sectionTitle').delay(200).fadeOut(300);
+          $('#sectionTitle').delay(500).fadeOut(1000);
         }
       }
 
