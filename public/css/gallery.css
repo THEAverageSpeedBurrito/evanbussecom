@@ -18,3 +18,17 @@
   border: 1px solid white;
   box-sizing: border-box;
 }
+
+.item_img {
+  height: 150px;
+  width: 100%;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.item_desc {
+  height: 50px;
+  width: 100%;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
