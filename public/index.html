@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Evan Busse</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/nav.css">
-    <script type="text/javascript" src="./js/nav.js"></script>
+    <link rel="stylesheet" href="./css/jquery.fullpage.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullpage.js" defer></script>
   </head>
   <body>
-    <nav id="nav-container">
-      <div class="logo-container center">
-        <h2>Evan Busse</h2>
-        <img alt="menu icon" class="hamburger" src="./assets/menu.svg"/>
-      </div>
-    </nav>
+    <div id="fullpage">
+    	<div class="section active">Some section</div>
+    	<div class="section">Some section</div>
+    	<div class="section">Some section</div>
+    	<div class="section">Some section</div>
+    </div>
+    <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage();
+    });
+    </script>
   </body>
 </html>
