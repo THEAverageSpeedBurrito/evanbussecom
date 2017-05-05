@@ -3,21 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Evan Busse</title>
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/jquery.fullpage.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jquery.fullpage.js" defer></script>
   </head>
   <body>
+    <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors:['home', 'work', 'about'],
+        sectionsColor : ['#FF686B', '#ffe'],
+        loopBottom: true,
+      });
+    });
+    </script>
     <div id="fullpage">
-    	<div class="section active">Some section</div>
+    	<div class="section">
+    	  <div class="container">
+    	    <div class="content">
+            <div class="profile-img">
+              <img alt="evan busse" src="assets/profile-cutout.png" class="profile" />
+            </div>
+    	      <div class="info">
+    	        <div class="name">
+                <h2>Evan Busse</h2>
+                <h2 class="subtitle">Web Developer</h2>
+    	        </div>
+    	      </div>
+    	    </div>
+    	  </div>
+        <hr/>
+    	</div>
     	<div class="section">Some section</div>
     	<div class="section">Some section</div>
     	<div class="section">Some section</div>
     </div>
-    <script>
-    $(document).ready(function() {
-      $('#fullpage').fullpage();
-    });
-    </script>
   </body>
 </html>

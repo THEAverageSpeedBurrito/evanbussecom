@@ -1,75 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-
-/*Main classes*/
-
-html, body {
-  width: 100%;
-  height: 100%;
+* {
   margin: 0;
   padding: 0;
-  background-color: #FFFFED;
 }
-
+/* Native styles overwrite */
 h2 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 35px;
-  /*color: #333333;*/
-  color: #38454F;
+  font-family: 'Roboto Mono';
+  font-size: 50px;
   text-transform: uppercase;
-  margin: 0;
+  color: white;
 }
 
-p {
-  font-family: 'Roboto Mono', monospace;
-  text-transform: uppercase;
-  color: #38454F;
-  margin: 0;
-  font-size: 20px;
+h2.subtitle {
+  font-size: 30px;
 }
 
-hr.bottom-line {
-  margin-top: -4px;
-  border: 0;
-  height: 1px;
-  background-color: slategray;
-  /*box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.8);*/
-  flex-basis: 100%;
-  flex-grow: 1;
-  flex-shrink: 1;
+hr {
+  width: 90%;
+  max-width: 700px;
+  margin: -4px auto;
+  border: 1px solid white;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
-/*Helper Classes*/
 
-.center {
-  text-align: center;
-}
-
-.right {
-  float: right;
-}
-
-/*Other classes*/
-
-#very-center {
+/* Main classes */
+.container {
+  display: inline-flex;
   width: 100%;
-  height: 400px;
-  max-width: 600px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto;
+  height: 100%;
+}
+
+.content {
+  margin: auto;
+  width: 704px;
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
+}
+
+.profile-img {
+  flex-basis: 350px;
+  /*box-sizing: border-box;*/
+  /*border: 1px solid blue;*/
 }
 
 img.profile {
   width: 100%;
-  height: auto;
-  min-height: 400px;
 }
 
-.section {
+.info {
   flex-grow: 1;
-  flex-shrink: 1;
-  width: 30%;
+}
+
+.name {
+  text-align: center;
+  padding-top: 50%;
 }
