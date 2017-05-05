@@ -4,6 +4,14 @@
   padding: 0;
 }
 /* Native styles overwrite */
+
+h1 {
+  font-family: 'Roboto Mono';
+  font-size: 65px;
+  color: #5D5D5D;
+  text-transform: uppercase;
+}
+
 h2 {
   font-family: 'Roboto Mono';
   font-size: 50px;
@@ -14,6 +22,7 @@ h2 {
 h2.subtitle {
   font-size: 30px;
 }
+
 
 hr {
   width: 90%;
@@ -71,4 +80,16 @@ img.profile {
 .icon:hover {
   transform: translate(0, -3px);
   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+#sectionTitle {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  height: 50px;
+  width: 300px;
+  padding: 0 10px 0 0;
+  text-align: right;
 }
