@@ -23,6 +23,9 @@ hr {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
+.center {
+  text-align: center;
+}
 
 /* Main classes */
 .container {
@@ -54,5 +57,18 @@ img.profile {
 
 .name {
   text-align: center;
-  padding-top: 50%;
+  padding-top: 40%;
+}
+
+.icon {
+  background-color: #FF8385;
+  border-radius: 50%;
+  margin-top: 15px;
+  width: 50px;
+  transition: .15s
+}
+
+.icon:hover {
+  transform: translate(0, -3px);
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
 }
