@@ -1,3 +1,5 @@
+var scrolled = false;
+
 $(document).ready(function() {
 
   $('#fullpage').fullpage({
@@ -9,11 +11,21 @@ $(document).ready(function() {
 
       //make sectio title follow page
       if(index !== 1){
+        scrolled = true;
+
         $('#sectionTitle').show();
         $('#title').text(anchorLink);
         $('#sectionTitle').animate({
           top: $(window).height() * (index - 1) + 10
         },300)
+      }else if(index === 1) {
+        if(scrolled) {
+          $('#title').text(anchorLink);
+          $('#sectionTitle').animate({
+            top: 10,
+          }, 200)
+          $('#sectionTitle').delay(200).fadeOut(300);
+        }
       }
 
     }
