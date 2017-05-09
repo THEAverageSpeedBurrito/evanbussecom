@@ -5,6 +5,8 @@ var projectSkills = {
   fridgeface: ['html', 'javascript', 'css', 'angular', 'node', 'postgres']
 }
 
+var allSkills = ['html', 'css', 'javascript', 'react', 'angular', 'photoshop', 'illustrator', 'node', 'postgres', 'sql'];
+
 $(document).ready(function() {
 
   $('#fullpage').fullpage({
@@ -43,12 +45,33 @@ $(document).ready(function() {
 //illuminate skills on mouseover
 $('#mathsaw, #fridgeface').on('mouseenter', function() {
   projectSkills[event.target.alt].forEach((id) => {
-    document.getElementById(id).style.transform = 'translateX(10px)'
+    document.getElementById(id).style.transform = 'translateX(15px)'
   })
+
+  dimIrrelevantSkills(projectSkills[event.target.alt]);
 
   $('#mathsaw, #fridgeface').on('mouseleave', function() {
     projectSkills[event.target.alt].forEach((id) => {
       document.getElementById(id).style.transform = ''
     })
+
+    //re-highlight all skills
+    allSkills.forEach((skill) => {
+      document.getElementById(skill).style.opacity = 1;
+    })
   })
 })
+
+
+function dimIrrelevantSkills (skills) {
+
+  //find irrelevant skills
+  var diff = allSkills.filter((skill) => {
+    return !skills.includes(skill);
+  })
+
+  //dim irrelevant skills
+  diff.forEach((skill) => {
+    document.getElementById(skill).style.opacity = 0.5;
+  });
+}
