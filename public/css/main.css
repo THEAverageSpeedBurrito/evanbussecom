@@ -124,6 +124,7 @@ img.profile {
 #skills-section {
   box-sizing: border-box;
   flex-basis: 200px;
+  min-width: 180px;
   max-height: 100%;
   padding: 5px;
   background-color: white;

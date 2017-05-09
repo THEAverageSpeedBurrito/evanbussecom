@@ -5,7 +5,7 @@ var projectSkills = {
   fridgeface: ['html', 'javascript', 'css', 'angular', 'node', 'postgres']
 }
 
-var allSkills = ['html', 'css', 'javascript', 'react', 'angular', 'photoshop', 'illustrator', 'node', 'postgres', 'sql'];
+var allSkills = ['html', 'css', 'javascript', 'react', 'angular', 'photoshop', 'illustrator', 'node', 'postgres', 'sql', 'jquery'];
 
 $(document).ready(function() {
 
@@ -54,22 +54,21 @@ $('#mathsaw, #fridgeface').on('mouseenter', function() {
     projectSkills[event.target.alt].forEach((id) => {
       document.getElementById(id).style.transform = ''
     })
-
     //re-highlight all skills
     allSkills.forEach((skill) => {
       document.getElementById(skill).style.opacity = 1;
     })
+    //disable secondary listener to prevent duplicates
+    $('#mathsaw, #fridgeface').off('mouseleave')
   })
 })
 
 
 function dimIrrelevantSkills (skills) {
-
   //find irrelevant skills
   var diff = allSkills.filter((skill) => {
     return !skills.includes(skill);
   })
-
   //dim irrelevant skills
   diff.forEach((skill) => {
     document.getElementById(skill).style.opacity = 0.5;
