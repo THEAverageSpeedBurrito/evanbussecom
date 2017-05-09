@@ -161,13 +161,13 @@ img.profile {
 #projects-section {
   flex-grow: 1;
   box-sizing: border-box;
-  padding: 5px 15px;
+  padding: 10px 15px;
   height: 100% inherit;
 }
 
 #projects-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   /*border: 1px solid white;*/
   display: flex;
@@ -177,14 +177,29 @@ img.profile {
 
 .project {
   height: 200px;
-  flex-basis: 380px;
+  display: block;
   min-width: 380px;
-  margin: 10px auto;
+  margin: 20px auto;
   box-sizing: border-box;
-  border: 1px solid white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  overflow: hidden;
+  transition: .2s
+}
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.4);
 }
 
 img.projectImg {
   width: auto;
-  height: 100% inherit;
+  height: 200px;
+}
+
+.project-info {
+  display: block;
+  box-sizing: border-box;
+  height: 50px;
+  width: 380px;
+  border: 1px solid blue;
 }
