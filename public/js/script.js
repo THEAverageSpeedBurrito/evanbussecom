@@ -1,5 +1,10 @@
 var scrolled = false;
 
+var projectSkills = {
+  mathsaw: ['html', 'javascript', 'css', 'react', 'node', 'postgres'],
+  fridgeface: ['html', 'javascript', 'css', 'angular', 'node', 'postgres']
+}
+
 $(document).ready(function() {
 
   $('#fullpage').fullpage({
@@ -33,3 +38,17 @@ $(document).ready(function() {
 
   $('#down_icon').delay(300).fadeIn(500);
 });
+
+//Script for skills/projects section
+//illuminate skills on mouseover
+$('#mathsaw, #fridgeface').on('mouseenter', function() {
+  projectSkills[event.target.alt].forEach((id) => {
+    document.getElementById(id).style.transform = 'translateX(10px)'
+  })
+
+  $('#mathsaw, #fridgeface').on('mouseleave', function() {
+    projectSkills[event.target.alt].forEach((id) => {
+      document.getElementById(id).style.transform = ''
+    })
+  })
+})
