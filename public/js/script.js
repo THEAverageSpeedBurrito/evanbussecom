@@ -2,7 +2,8 @@ var scrolled = false;
 
 var projectSkills = {
   mathsaw: ['html', 'javascript', 'css', 'react', 'node', 'postgres'],
-  fridgeface: ['html', 'javascript', 'css', 'angular', 'node', 'postgres']
+  fridgeface: ['html', 'javascript', 'css', 'angular', 'node', 'postgres'],
+  flickrfinder: ['html', 'css', 'javascript', 'jquery']
 }
 
 var allSkills = ['html', 'css', 'javascript', 'react', 'angular', 'photoshop', 'illustrator', 'node', 'postgres', 'sql', 'jquery'];
@@ -43,14 +44,14 @@ $(document).ready(function() {
 
 //Script for skills/projects section
 //illuminate skills on mouseover
-$('#mathsaw, #fridgeface').on('mouseenter', function() {
+$('#mathsaw, #fridgeface, #flickrfinder').on('mouseenter', function() {
   projectSkills[event.target.alt].forEach((id) => {
     document.getElementById(id).style.transform = 'translateX(15px)'
   })
 
   dimIrrelevantSkills(projectSkills[event.target.alt]);
 
-  $('#mathsaw, #fridgeface').on('mouseleave', function() {
+  $('#mathsaw, #fridgeface, #flickrfinder').on('mouseleave', function() {
     projectSkills[event.target.alt].forEach((id) => {
       document.getElementById(id).style.transform = ''
     })
@@ -59,7 +60,7 @@ $('#mathsaw, #fridgeface').on('mouseenter', function() {
       document.getElementById(skill).style.opacity = 1;
     })
     //disable secondary listener to prevent duplicates
-    $('#mathsaw, #fridgeface').off('mouseleave')
+    $('#mathsaw, #fridgeface, #flickrfinder').off('mouseleave')
   })
 })
 
