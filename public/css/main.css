@@ -51,6 +51,20 @@ h3.skill-label {
   text-transform: capitalize;
 }
 
+h4 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h4.subtitle {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: none;
+}
+
 hr {
   width: 90%;
   max-width: 700px;
@@ -160,17 +174,18 @@ img.profile {
 }
 
 #projects-section {
-  flex-grow: 1;
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
   padding: 10px 15px;
-  height: 100% inherit;
+  display: inline-flex;
 }
 
 #projects-container {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
-  /*border: 1px solid white;*/
+  margin: auto;
+  height: 480px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
