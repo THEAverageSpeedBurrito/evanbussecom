@@ -67,6 +67,10 @@ $('#mathsaw, #fridgeface, #flickrfinder, #artops').on('mouseenter', function() {
   })
 })
 
+$('#mathsaw, #fridgeface, #flickrfinder, #artops').on('click', function () {
+  $('#modal-container').show();
+})
+
 
 function dimIrrelevantSkills (skills) {
   //find irrelevant skills
