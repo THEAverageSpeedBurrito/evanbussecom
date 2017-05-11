@@ -1,10 +1,10 @@
 var scrolled = false;
 
 var projectSkills = {
-  mathsaw: ['html', 'javascript', 'css', 'react', 'node', 'postgres'],
-  fridgeface: ['html', 'javascript', 'css', 'angular', 'node', 'postgres'],
-  flickrfinder: ['html', 'css', 'javascript', 'jquery'],
-  artops: ['html', 'css', 'javascript', 'react', 'postgres', 'node']
+  'math saw': ['html', 'javascript', 'css', 'react', 'node', 'postgres'],
+  'fridge face': ['html', 'javascript', 'css', 'angular', 'node', 'postgres'],
+  'flickr finder': ['html', 'css', 'javascript', 'jquery'],
+  'art-ops': ['html', 'css', 'javascript', 'react', 'postgres', 'node']
 }
 
 var allSkills = ['html', 'css', 'javascript', 'react', 'angular', 'photoshop', 'illustrator', 'node', 'postgres', 'sql', 'jquery'];
@@ -68,10 +68,11 @@ $('#mathsaw, #fridgeface, #flickrfinder, #artops').on('mouseenter', function() {
 })
 
 $('#mathsaw, #fridgeface, #flickrfinder, #artops').on('click', function () {
-  $('#modal-container').show();
+  $('#modal-title').text(event.target.alt)
+  $('#modal-container').fadeIn(250);
 
   $('#modal-container').on('click', function () {
-    $('#modal-container').hide();
+    $('#modal-container').fadeOut(250);
 
     //close modal functionality
     $('#modal-container').off('click')
