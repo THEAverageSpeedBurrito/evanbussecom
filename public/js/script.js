@@ -69,6 +69,13 @@ $('#mathsaw, #fridgeface, #flickrfinder, #artops').on('mouseenter', function() {
 
 $('#mathsaw, #fridgeface, #flickrfinder, #artops').on('click', function () {
   $('#modal-container').show();
+
+  $('#modal-container').on('click', function () {
+    $('#modal-container').hide();
+
+    //close modal functionality
+    $('#modal-container').off('click')
+  })
 })
 
 
