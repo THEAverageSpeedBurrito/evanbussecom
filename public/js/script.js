@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   $('#fullpage').fullpage({
     anchors:['home', 'work', 'about'],
-    sectionsColor : ['#FF686B', '#36383F', '#98C1D9'],
+    sectionsColor : ['#FF686B', '#36383F', '#114B5F'],
     loopBottom: true,
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
@@ -37,6 +37,8 @@ $(document).ready(function() {
         }
       }
 
+      $('video').get(0).playbackRate = 0.7;
+      $('video').get(0).play();
     }
   });
 
@@ -76,3 +78,5 @@ function dimIrrelevantSkills (skills) {
     document.getElementById(skill).style.opacity = 0.5;
   });
 }
+
+//Paralax stuff

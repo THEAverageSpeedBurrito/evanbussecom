@@ -66,6 +66,7 @@ h4.subtitle {
 }
 
 hr {
+  z-index: 1;
   width: 90%;
   max-width: 700px;
   margin: -4px auto;
@@ -85,10 +86,19 @@ hr {
 }
 
 .content {
+  z-index: 1;
   margin: auto;
   width: 704px;
   height: auto;
   display: flex;
+}
+
+video {
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  width: 100%;
+  opacity: .2;
 }
 
 .profile-img {
