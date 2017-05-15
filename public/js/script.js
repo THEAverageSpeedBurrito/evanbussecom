@@ -1,10 +1,22 @@
 var scrolled = false;
 
-var projectSkills = {
-  'math saw': ['html', 'javascript', 'css', 'react', 'node', 'postgres'],
-  'fridge face': ['html', 'javascript', 'css', 'angular', 'node', 'postgres'],
-  'flickr finder': ['html', 'css', 'javascript', 'jquery'],
-  'art-ops': ['html', 'css', 'javascript', 'react', 'postgres', 'node']
+var projectData = {
+  'math saw': {
+    skills: ['html', 'javascript', 'css', 'react', 'node', 'postgres'],
+    description: ''
+  },
+  'fridge face': {
+    skills: ['html', 'javascript', 'css', 'angular', 'node', 'postgres'],
+    description: ''
+  },
+  'flickr finder': {
+    skills: ['html', 'css', 'javascript', 'jquery'],
+    description: ''
+  },
+  'art-ops': {
+    skills: ['html', 'css', 'javascript', 'react', 'postgres', 'node'],
+    description: ''
+  }
 }
 
 var allSkills = ['html', 'css', 'javascript', 'react', 'angular', 'photoshop', 'illustrator', 'node', 'postgres', 'sql', 'jquery'];
@@ -48,14 +60,14 @@ $(document).ready(function() {
 //Script for skills/projects section
 //illuminate skills on mouseover
 $('#mathsaw, #fridgeface, #flickrfinder, #artops').on('mouseenter', function() {
-  projectSkills[event.target.alt].forEach((id) => {
+  projectData[event.target.alt].skills.forEach((id) => {
     document.getElementById(id).style.transform = 'translateX(15px)'
   })
 
-  dimIrrelevantSkills(projectSkills[event.target.alt]);
+  dimIrrelevantSkills(projectData[event.target.alt].skills);
 
   $('#mathsaw, #fridgeface, #flickrfinder, #artops').on('mouseleave', function() {
-    projectSkills[event.target.alt].forEach((id) => {
+    projectData[event.target.alt].skills.forEach((id) => {
       document.getElementById(id).style.transform = ''
     })
     //re-highlight all skills
