@@ -3,19 +3,23 @@ var scrolled = false;
 var projectData = {
   'math saw': {
     skills: ['html', 'javascript', 'css', 'react', 'node', 'postgres'],
-    description: ''
+    description: 'Math saw is a productivity application that ouputs schematics designed to facilitate the process of cutting project components out of larget stock material with an emphasis on efficiency and minimization of waste.',
+    url: 'https://math-saw.herokuapp.com/'
   },
   'fridge face': {
     skills: ['html', 'javascript', 'css', 'angular', 'node', 'postgres'],
-    description: ''
+    description: 'Created primarily as a fridge managment app, Fridge Face is targeted towards co-working and office environments that have a community fridge. It facilitates storing and catagorizing food and provides detailed admin statistics for maintainance and upkeep.',
+    url: 'https://caspeter-fridge-face.herokuapp.com/fridge.html',
   },
   'flickr finder': {
     skills: ['html', 'css', 'javascript', 'jquery'],
-    description: ''
+    description: 'This site ties together Flickr and Google Maps APIs to create an interactive map of images based on the location they were taken. Other functionality includes the ability to expand images and save images to custom collections.',
+    url: 'http://eb-flickrfinder.surge.sh/',
   },
   'art-ops': {
     skills: ['html', 'css', 'javascript', 'react', 'postgres', 'node'],
-    description: ''
+    description: '',
+    url: '',
   }
 }
 
@@ -81,6 +85,9 @@ $('#mathsaw, #fridgeface, #flickrfinder, #artops').on('mouseenter', function() {
 
 $('#mathsaw, #fridgeface, #flickrfinder, #artops').on('click', function () {
   $('#modal-title').text(event.target.alt)
+  $('#modal-content').text(projectData[event.target.alt].description)
+  $('#modal-link').attr('href', projectData[event.target.alt].url)
+
   $('#modal-container').fadeIn(250);
 
   $('#modal-container').on('click', function () {

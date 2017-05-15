@@ -76,8 +76,40 @@ hr {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
+button {
+  min-width: 75px;
+  color: #444444;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  background-color: transparent;
+  border: 1px solid #444444;
+  border-radius: 3px;
+  transition: .2s;
+  outline: none;
+}
+
+button:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid dodgerblue;
+  transform: translate(0, -2px);
+}
+
 .center {
   text-align: center;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  margin: auto;
+  overflow: auto;
+  opacity: .2;
 }
 
 /* Main classes */
@@ -95,18 +127,6 @@ hr {
   display: flex;
 }
 
-video {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  margin: auto;
-  overflow: auto;
-  opacity: .2;
-}
 
 .profile-img {
   flex-basis: 350px;
@@ -254,7 +274,7 @@ img.projectImg {
   top: 50%;
   transform: translateY(-50%);
   width: 500px;
-  height: 300px;
+  height: 200px;
   margin: auto;
   padding: 10px;
   background-color: white;
@@ -273,9 +293,7 @@ img.projectImg {
 
 #modal-content {
   width: 100%;
-  max-height: 200px;
-  height: 100%;
-  /*border: 1px solid #E8E8E8;*/
+  height: 100px;
   margin-top: 10px;
   color: #464646;
 }
