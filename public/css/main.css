@@ -99,6 +99,13 @@ button:hover {
   text-align: center;
 }
 
+.right {
+  flex-basis: 100%;
+  /*text-align: sright;*/
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 video {
   position: fixed;
   top: 0;

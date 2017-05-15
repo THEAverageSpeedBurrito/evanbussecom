@@ -19,7 +19,7 @@ var projectData = {
   'art-ops': {
     skills: ['html', 'css', 'javascript', 'react', 'postgres', 'node'],
     description: '',
-    url: '',
+    url: 'https://eb-artops.herokuapp.com/',
   }
 }
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   $('#fullpage').fullpage({
     anchors:['home', 'work', 'about'],
-    sectionsColor : ['#FF686B', '#36383F', '#114B5F'],
+    sectionsColor : ['#FF686B', '#114B5F', '#36383F'],
     loopBottom: true,
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
