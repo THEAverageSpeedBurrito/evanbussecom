@@ -36,13 +36,17 @@ $(document).ready(function() {
 
       //make sectio title follow page
       if(index !== 1){
-        scrolled = true;
-        $('#title').show()
-        $('#sectionTitle').show();
-        $('#title').text(anchorLink);
-        $('#sectionTitle').animate({
-          top: $(window).height() * (index - 1) + 10
-        },300).delay(500).fadeOut(1000)
+        if(index === 2){
+          //show and hide intro-quote
+          //Then load content
+          $('#intro-quote').animate({
+            opacity: 1,
+          }, 500)
+          .delay(1000)
+          .animate({
+            opacity: 0,
+          }, 500)
+        }
       }else {
         if(scrolled) {
           $('#title').text(anchorLink);
