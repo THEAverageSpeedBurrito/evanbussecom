@@ -39,14 +39,23 @@ $(document).ready(function() {
         if(index === 2){
           //show and hide intro-quote
           //Then load content
+          $('#intro-quote').show();
+          $('#about-container').css({'opacity': 0})
+
           $('#intro-quote').animate({
             opacity: 1,
           }, 500)
-          .delay(1000)
+          .delay(1500)
           .animate({
             opacity: 0,
-          }, 500)
+          }, 500, function () {
+            $('#intro-quote').hide()
+            $('#about-container').animate({
+              opacity: 1,
+            }, 500)
+          })
         }
+
       }else {
         if(scrolled) {
           $('#title').text(anchorLink);

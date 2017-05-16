@@ -316,6 +316,10 @@ img.projectImg {
 
 /*About Section Classes*/
 
+.hidden {
+  display: none;
+}
+
 #intro-quote {
   display: inline-flex;
   width: 100%;
@@ -323,5 +327,15 @@ img.projectImg {
 }
 
 .quote-container {
+  margin: auto;
+}
+
+#about-container {
+  display: inline-flex;
+  width: 100%;
+  opacity: 0;
+}
+
+#about-content {
   margin: auto;
 }
