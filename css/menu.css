@@ -1,0 +1,17 @@
+#menu {
+  position: fixed;
+  left: -250px;
+  height: 100vh;
+  width: 250px;
+  background: #242424;
+}
+
+#menu-tab {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: #242424;
+  top: 10px;
+  right: -48px;
+  border-radius: 2px;
+}
