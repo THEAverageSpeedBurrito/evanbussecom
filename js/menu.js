@@ -19,4 +19,16 @@
 
   })
 
+  var topbar = document.getElementById('topbar')
+
+  console.log(topbar.offsetTop);
+
+  // $(window).on('scroll', (e) => {
+  //   console.log(window.scrollY);
+  //   if(window.scrollY === topbar.offsetTop){
+  //     console.log('BINGOOOOOO');
+  //     $('.total-center').css('position', 'fixed')
+  //   }
+  // })
+
 }())
