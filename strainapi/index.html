@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>The Strain API</title>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src="./script.js"></script>
   </head>
   <body>
@@ -28,38 +29,38 @@
       <div class="section">
         <h2>Documentation</h2>
         <p>The base url for making queries to The Strain API is as follows:</p>
-        <div class="snippet">http://thestrainapi.dyndns.com/<strong>API_KEY</strong></div>
+        <div class="snippet">strainapi.evanbusse.com:4200/<strong>API_KEY</strong></div>
         <h3>Information Queries</h3>
         <p>Information queries are used for getting information needed for making other queries. For example, getting the list of strains or effects so you know what search parameters are available.</p>
         <p class="c-label">List all Effects</p>
-        <div class="snippet">http://thestrainapi.dyndns.com/<strong>API_KEY</strong>/searchdata/effects</div>
+        <div class="snippet">http://thestrainapi.redirectme.net:4200/<strong>API_KEY</strong>/searchdata/effects</div>
         <p class="c-label">List all Flavors</p>
-        <div class="snippet">http://thestrainapi.dyndns.com/<strong>API_KEY</strong>/searchdata/flavors</div>
+        <div class="snippet">http://thestrainapi.redirectme.net:4200/<strong>API_KEY</strong>/searchdata/flavors</div>
         <h3>Search Queries</h3>
         <p>
-          Search queries are the main type of queries and are used to get strain information based on a variety of criteria.
+          Search queries are the main type of query and are used to get strain information based on a variety of criteria.
         </p>
 
         <p class="c-label"> Get all strains (Please use this route sparingly as it is requires a lot of computing power)
         </p>
-        <div class="snippet"> http://thestrainapi.dyndns.com/<strong>API_KEY</strong>/strains/search/all
+        <div class="snippet"> http://thestrainapi.redirectme.net:4200/<strong>API_KEY</strong>/strains/search/all
         </div>
 
         <p class="c-label">Search for strains by name</p>
-        <div class="snippet"> http://thestrainapi.dyndns.com/<strong>API_KEY</strong>/strains/search/name/NAME
+        <div class="snippet"> http://thestrainapi.redirectme.net:4200/<strong>API_KEY</strong>/strains/search/name/NAME
         </div>
 
         <p class="c-label">Search for strains by race (Available races: Sativa, Indica, and Hybrid)
         </p>
-        <div class="snippet"> http://thestrainapi.dyndns.com/<strong>API_KEY</strong>/strains/search/race/RACE
+        <div class="snippet"> http://thestrainapi.redirectme.net:4200/<strong>API_KEY</strong>/strains/search/race/RACE
         </div>
 
         <p class="c-label">Search for strains by effect</p>
-        <div class="snippet"> http://thestrainapi.dyndns.com/<strong>API_KEY</strong>/strains/search/effect/EFFECT
+        <div class="snippet"> http://thestrainapi.redirectme.net:4200/<strong>API_KEY</strong>/strains/search/effect/EFFECT
         </div>
 
         <p class="c-label">Search for strains by flavor</p>
-        <div class="snippet"> http://thestrainapi.dyndns.com/<strong>API_KEY</strong>/strains/search/flavor/FLAVOR
+        <div class="snippet"> http://thestrainapi.redirectme.net:4200/<strong>API_KEY</strong>/strains/search/flavor/FLAVOR
         </div>
 
         <h3>Additional Queries</h3>
@@ -67,12 +68,12 @@
 
         <p class="c-label">Get strain effects</p>
         <div class="snippet">
-          http://thestrainapi.dyndns.com/<strong>API_KEY</strong>/strains/data/effects/STRAIN_ID
+          http://thestrainapi.redirectme.net:4200/<strong>API_KEY</strong>/strains/data/effects/STRAIN_ID
         </div>
 
         <p class="c-label">Get strain flavors</p>
         <div class="snippet">
-          http://thestrainapi.dyndns.com/<strong>API_KEY</strong>/strains/data/flavors/STRAIN_ID
+          http://thestrainapi.redirectme.net:4200/<strong>API_KEY</strong>/strains/data/flavors/STRAIN_ID
         </div>
       </div>
     </div>
