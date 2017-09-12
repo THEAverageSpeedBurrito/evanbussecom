@@ -1,8 +1,11 @@
 (function(){
   console.log('Menu Initialized');
+
   var $menu = $('#menu')
   var $openIcon = $('#open-menu')
   var $menuLabel = $('.menu-label')
+  let $window = $(window)
+  var belowFold = false;
 
   $('#menu-tab').on('click', function(e){
     var value = 0
@@ -16,8 +19,25 @@
     }
 
     $menu.animate({
-      left: `${value}px`
+      left: value
     }, 500)
+  })
+
+  $(window).on('scroll', (event) => {
+    let wHeight = $window.height()
+    let top = $window.scrollTop()
+
+    if(top > wHeight/2 && belowFold === false) {
+      belowFold = true
+      $menu.animate({
+        left: -300
+      }, 200)
+    }else if(top < wHeight/2 && belowFold === true){
+      belowFold = false
+      $menu.animate({
+        left: -250
+      }, 200)
+    }
 
   })
 
