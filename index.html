@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/menu.css">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script defer src="./js/menu.js"></script>
+    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <div id="menu">
@@ -49,7 +51,7 @@
         <a href="http://strains.evanbusse.com" target="_blank">
           <div class="menu-item">
             <div class="item-icon">
-              <img src="strainapi/assets/weed_cube.png" alt="strain api">
+              <img src="assets/icons/weed_cube.png" alt="strain api">
             </div>
             <div class="item-info">
               <h3 class="p-title">The Strain API</h3>
@@ -89,7 +91,16 @@
         </div>
       </div>
     </div>
-    <div class="full-page" style="background: gray">test</div>
-    <div class="full-page">test</div>
+    <div class="full-page skills">
+      <div class="skills-label">
+        <h1>Skills</h1>
+      </div>
+      <div class="canvas-container">
+        <canvas id="frontEnd"></canvas>
+      </div>
+      <div class="canvas-container">
+        <canvas id="backEnd"></canvas>
+      </div>
+    </div>
   </body>
 </html>

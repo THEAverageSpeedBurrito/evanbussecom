@@ -35,9 +35,11 @@ h3 {
 /* Total center styles */
 .full-page {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: inline-flex;
+  flex-wrap: wrap;
 }
+
 .total-center {
   height: auto;
   width: 100%;

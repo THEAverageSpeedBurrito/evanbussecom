@@ -7,6 +7,7 @@
   let $window = $(window)
   var belowFold = false;
 
+  // open menu functionality
   $('#menu-tab').on('click', function(e){
     var value = 0
     if($menu.css('left') === '0px'){
@@ -23,6 +24,7 @@
     }, 500)
   })
 
+  // hide menu on scroll
   $(window).on('scroll', (event) => {
     let wHeight = $window.height()
     let top = $window.scrollTop()
@@ -32,6 +34,7 @@
       $menu.animate({
         left: -300
       }, 200)
+      $menuLabel.fadeOut()
     }else if(top < wHeight/2 && belowFold === true){
       belowFold = false
       $menu.animate({
