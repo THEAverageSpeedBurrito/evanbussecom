@@ -26,6 +26,12 @@ h1.subtitle {
   color: #474747;
 }
 
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
 /* Total center styles */
 .full-page {
   height: 100vh;

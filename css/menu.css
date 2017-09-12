@@ -1,3 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+a:link    {
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            blue;
+}
+a:visited {
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #fff;
+}
+a:hover   {
+  text-decoration:  none;
+  font-weight:      bold;
+  color:            #fff;
+}
+a:active  {
+  text-decoration:  none;
+  font-weight:      bold;
+  background-color: black;
+  color: white;
+}
+
+h3.p-title {
+  margin: 23px 0;
+}
+
+h3.menu-label {
+  display: none;
+  position: absolute;
+  left: 220px;
+  color: #242424;
+  font-size: 35px;
+  transform: rotate(90deg);
+}
+
 #menu {
   position: fixed;
   z-index: 200;
@@ -6,6 +45,7 @@
   width: 250px;
   background: #242424;
   display: flex;
+  padding: 20px 10px;
 }
 
 #menu-tab {
@@ -24,4 +64,42 @@
   height: 40px;
   margin: 28px 0 0 50px;
   transition: 0.5s
+}
+
+.menu-container {
+  width: 230px;
+  height: 100%;
+  /* border: 1px solid white; */
+}
+
+.menu-item {
+  width: 230px;
+  height: 75px;
+  background: #373737;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  transition: 0.2s;
+}
+.menu-item:hover {
+  transform: translate(0, -2px);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.item-icon {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+}
+
+.item-icon > img {
+  height: 55px;
+  width: auto;
+}
+
+.item-info {
+  height: 75px;
+  flex-grow: 1;
+  text-align: left;
 }
