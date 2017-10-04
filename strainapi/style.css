@@ -66,7 +66,7 @@ button {
   font-size: 16px;
   text-transform: uppercase;
   color: #249b4b;
-  transition: 0.09s;
+  transition: 0.1s;
 }
 button:hover {
   background: #249b4b;
@@ -85,6 +85,7 @@ button:hover {
   padding: 10px;
   margin: 20px auto;
   box-sizing: border-box;
+  border-radius: 5px;
   background: white;
   display: flex;
   flex-wrap: wrap;
@@ -136,4 +137,44 @@ img.logo {
   background: #E8E8E8;
   border: 1px solid #249b4b;
   border-radius: 3px;
+}
+
+.form {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #EAE6E5;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+input[type=text] {
+  border: 1px solid #249b4b;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+input[type=text]:focus {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+center > h2 {
+  margin: 0 0 20px 0;
+}
+
+center > button {
+  margin-top: 20px;
+  background: #249b4b;
+  color: white;
+}
+center > button:hover {
+  transform: translateY(-2px);
 }

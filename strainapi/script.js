@@ -4,25 +4,18 @@
 
 function newKey() {
   console.log('getting new key');
-  var name = prompt('Enter your name:')
-  var email = prompt('Enter your email: ')
 
-  while (name === ''){
-    name = prompt('Enter your name:')
-  }
-
-  while(email === ''){
-    email = prompt('Enter your email:')
-  }
+  var name = $('#key-name').val()
+  var email = $('#key-email').val()
 
   console.log(name, email);
 
-  if(name !== '' && email !== '') {
-    $.post('http://thestrainapi.redirectme.net:4200/newkey', {name: name, email: email}, (response) => {
-      console.log(response);
-    })
-
-  }else{
-    alert('Information invalid. Please try again')
-  }
+  // if(name !== '' && email !== '') {
+  //   $.post('http://strainapi.evanbusse.com/newkey', {name: name, email: email}, (response) => {
+  //     console.log(response);
+  //   })
+  //
+  // }else{
+  //   alert('Information invalid. Please try again')
+  // }
 }
