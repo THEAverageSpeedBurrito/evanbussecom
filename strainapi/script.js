@@ -21,7 +21,12 @@ function newKey() {
         data: JSON.stringify({name: name, email: email}),
         contentType: "application/json; charset=utf-8",
         success: function (data) {
-          console.log(data);
+          if(window.localStorage){
+            localStorage.setItem('apikey', data)
+            window.location.href = './index.html'
+          }else{
+            alert('Your browser does not support localstorage so here is your api key: ' + data + ' Keep it in a safe place.')
+          }
         },
         error: function(error) {
           alert('There was an error adding your information to the database and retrieving an API key. Please try again later.')
