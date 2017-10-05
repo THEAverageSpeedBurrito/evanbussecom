@@ -9,7 +9,9 @@
     var key = localStorage.getItem('apikey')
     localStorage.setItem('apikey', key)
 
-    $('#getting-started').empty().append(`<center><p>Your api key: <strong>${key}</strong></p></center>`)
+    $('.info-key').css('opacity', 1)
+    $('#api-key').text(key)
+    $('#newkey').attr('disabled', 'disabled')
   }
 
 }())

@@ -132,6 +132,17 @@ img.logo {
 .info-section > * {
   margin-top: 0px;
 }
+.info-key {
+  opacity: 0;
+  margin-left: 10px;
+  width: auto;
+  padding-right: 10px;
+}
+#api-key {
+  margin-left: 5px;
+  color: #2F9B4B;
+}
+
 .status-circle {
   height: 20px;
   width: 20px;
