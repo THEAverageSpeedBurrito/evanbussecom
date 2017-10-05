@@ -1,5 +1,13 @@
 (function() {
 
+  if(localStorage.getItem('apikey')){
+    // refresh localstorage to prolong life
+    var key = localStorage.getItem('apikey')
+    localStorage.setItem('apikey', key)
+
+    $('#getting-started').empty().append(`<center><p>Your api key: <strong>${key}</strong></p></center>`)
+  }
+
 }())
 
 function newKey() {
@@ -29,7 +37,7 @@ function newKey() {
           }
         },
         error: function(error) {
-          alert('There was an error adding your information to the database and retrieving an API key. Please try again later.')
+          alert('There was an error adding your information to the database and retrieving an API key. Error: ' + error)
         }
       })
     }else{
