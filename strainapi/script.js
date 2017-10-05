@@ -19,9 +19,6 @@ function newKey() {
   if(name && email) {
     var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     if(email.match(pattern)){
-      // $.post('http://strainapi.evanbusse.com/newkey', {name: name, email: email}, (response) => {
-      //     console.log(response);
-      //   })
 
       $.ajax({
         type: 'POST',
