@@ -1,5 +1,9 @@
 (function() {
 
+  $.get('http://strainapi.evanbusse.com/test').fail(() => {
+    $('.status-circle').addClass('down')
+  })
+
   if(localStorage.getItem('apikey')){
     // refresh localstorage to prolong life
     var key = localStorage.getItem('apikey')
