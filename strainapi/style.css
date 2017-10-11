@@ -181,6 +181,7 @@ img.logo {
   background: #E8E8E8;
   border: 1px solid #249b4b;
   border-radius: 3px;
+  word-break: break-all;
 }
 
 .form {
