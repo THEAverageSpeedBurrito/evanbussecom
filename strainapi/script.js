@@ -23,7 +23,7 @@ function newKey() {
   console.log(name, email);
 
   if(name && email) {
-    var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    var pattern = /^[a-zA-Z0-9._]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     if(email.match(pattern)){
 
       $.ajax({
