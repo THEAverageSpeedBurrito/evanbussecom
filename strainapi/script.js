@@ -20,8 +20,6 @@ function newKey() {
   var name = $('#key-name').val()
   var email = $('#key-email').val()
 
-  console.log(name, email);
-
   if(name && email) {
     var pattern = /^[a-zA-Z0-9._]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     if(email.match(pattern)){
@@ -40,7 +38,8 @@ function newKey() {
           }
         },
         error: function(error) {
-          alert('There was an error adding your information to the database and retrieving an API key. Error: ' + error)
+          console.log(error.responseText);
+          alert(error.responseText)
         }
       })
     }else{
