@@ -53,6 +53,23 @@ hr.profile {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* nav styles */
+
+.nav-container {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.nav-container > * {
+  flex-grow: 1;
+}
+
+h2.slim:hover {
+  color: black;
+}
 
 /* Skills section styles */
 

@@ -1,6 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Hind:400,500,600');
-@import url('https://fonts.googleapis.com/css?family=Hind:600|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500');
 
 /* HTML element styles */
 * {
@@ -19,17 +19,36 @@ h1 {
   margin: 0px 0 10px 0;
   font-size: 60px;
   font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 h1.subtitle {
   margin-top: -15px;
   font-size: 19.8px;
   color: #474747;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: gray;
+  text-transform: capitalize;
 }
 
 h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: white;
+}
+
+a:active {
+  background: none !important;
+}
+
+/* Utility/modifier classes */
+
+.slim {
+  font-weight: 300;
 }
 
 /* Total center styles */
