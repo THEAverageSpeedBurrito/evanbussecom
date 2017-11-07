@@ -60,21 +60,30 @@ hr.profile {
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
-  padding: 0 25px;
+  padding: 0 40px;
 }
 
 .nav-container > * {
   flex-grow: 1;
+  cursor: pointer;
 }
 
 h2.slim:hover {
   color: black;
 }
 
-/* Skills section styles */
+/* section styles */
 
-.skills {
+#home {
+  display: inline-flex;
+}
+
+#about {
   background: #FF6347;
+}
+
+#work {
+  background: blue;
 }
 
 .canvas-container {
