@@ -45,6 +45,10 @@ p.c-label {
   margin-bottom: 0px;
 }
 
+p.alert {
+  color: red;
+}
+
 hr {
   flex-basis: 100%;
   border: none;
