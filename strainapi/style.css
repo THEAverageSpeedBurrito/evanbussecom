@@ -49,6 +49,18 @@ p.alert {
   color: red;
 }
 
+p.newroute {
+  background: #FFD028;
+  padding: 3px 5px;
+  margin-left: 10px;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.inline {
+  display: inline;
+}
+
 hr {
   flex-basis: 100%;
   border: none;
