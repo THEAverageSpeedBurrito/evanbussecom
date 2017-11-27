@@ -55,3 +55,29 @@ function newKey() {
     }
   }
 }
+
+function lostKey() {
+  var email = $('#key-email').val()
+
+  if(email) {
+    $.ajax({
+      type: 'GET',
+      url: `http://strainapi.evanbusse.com/lostkey/${email}`,
+      contentType: "application/json; charset=utf-8",
+      success: function (data) {
+        if(window.localStorage){
+          localStorage.setItem('apikey', data.key)
+          window.location.href = './index.html'
+        }else{
+          alert('Your browser does not support localstorage so here is your api key: ' + data + ' Keep it in a safe place.')
+        }
+      },
+      error: function(error) {
+        console.log(error.responseText);
+        alert(error.responseText)
+      }
+    })
+  }else{
+    alert('You need to provide a valid email address that has already been used to register.')
+  }
+}

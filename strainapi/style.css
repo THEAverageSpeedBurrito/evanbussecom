@@ -78,6 +78,16 @@ button:hover {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.45);
 }
 
+#lostkey {
+  margin-left: 20px;
+  border: 2px solid gray;
+  color: gray
+}
+#lostkey:hover {
+  background: gray;
+  color: white;
+}
+
 .center {
   text-align: center;
 }
