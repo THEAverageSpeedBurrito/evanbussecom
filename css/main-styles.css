@@ -16,7 +16,7 @@ html, body {
 }
 
 .no-scroll {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h1 {
@@ -66,7 +66,7 @@ button {
 button:hover {
   border: 1px solid #fb93ff;
   color: #fb93ff;
-  animation-duration: 1s;
+  animation-duration: .8s;
   animation-name: pulse;
   animation-iteration-count: infinite;
 }
