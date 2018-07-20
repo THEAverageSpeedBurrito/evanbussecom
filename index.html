@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="no-scroll">
   <head>
     <meta charset="utf-8">
     <title>Evan Busse</title>
@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./css/menu.css">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script defer src="./js/snap.svg-min.js"></script>
-    <script defer src="./js/svg.js"></script>
-    <!-- <script defer src="./js/menu.js"></script> -->
-    <script defer src="./js/script.js"></script>
+    <!-- <script defer src="./js/snap.svg-min.js"></script> -->
+    <!-- <script defer src="./js/svg.js"></script> -->
+    <script defer src="./js/menu.js"></script>
+    <!-- <script defer src="./js/script.js"></script> -->
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107649138-1"></script>
     <script>
@@ -43,12 +43,32 @@
             <a href="mailto:evanbusse@gmail.com"><img src="./assets/icons/email_icon.svg" alt="email" class="social-icon"></a>
           </div>
         </div>
+        <center class="action-panel">
+          <button onclick="begin_tour()">Take The Tour</button>
+        </center>
       </div>
     </div>
-    <div class="full-page projects">
-
+    <div id="timeline">
+      <div id="hash-container"></div>
+      <div class="center-flex">
+        <div class="full-flex">
+          <center>hey</center>
+        </div>
+      </div>
+      <div class="center-flex" style="height: 100vh">
+        <div class="full-flex">
+          <center id="fade_in_scroll" style="opacity: 0">
+            <img src="./assets/icons/up_circle.svg" alt="Scroll up" class="up-icon-bottom">
+            <p class="white">Scroll up to take a tour featuring me</p>
+          </center>
+        </div>
+        <center class="full-flex">
+          <h1 style="color: white">Websites don't usually <br> begin at the bottom.</h1>
+          <h3 style="color: white">But some do, so this could be interesting...</h3>
+        </center>
+      </div>
     </div>
-    <div class="full-page skills">
+    <!-- <div class="full-page skills">
       <div class="skills-label">
         <h1>Skills</h1>
       </div>
@@ -58,6 +78,6 @@
       <div class="canvas-container">
         <canvas id="backEnd"></canvas>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>

@@ -25,6 +25,12 @@ hr.profile {
   box-shadow: 0 1px 3px 0 rgba(207, 205, 205, 0.5);
 }
 
+.action-panel {
+  flex-basis: 100%;
+  display: block;
+  margin-top: 30px;
+}
+
 
 /* Social buttons styles */
 
@@ -77,8 +83,60 @@ hr.profile {
   padding-top: 50px;
 }
 
-/* Projects Styles */
+/* Timeline Styles */
 
-.projects {
-  background-color: white;
+#timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  height: 5000px;
+  padding: 20px 30px;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #fb93ff 50%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#fb93ff 50%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%,#fb93ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#hash-container {
+  position: absolute;
+  height: 5000px;
+  width: 100px;
+  background: blue;
+  left: -30px;
+  top: 100vh;
+}
+
+.full-flex {
+  flex-basis: 100%;
+  height: auto;
+}
+
+.half-flex {
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: auto;
+}
+
+.flex-middle {
+  display: flex;
+}
+
+.center-flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.up-icon-bottom {
+  display: block;
+  animation-duration: 1s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+.up-icon-bottom:hover {
+  cursor: pointer;
 }

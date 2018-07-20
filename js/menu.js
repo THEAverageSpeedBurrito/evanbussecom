@@ -7,42 +7,33 @@
   let $window = $(window)
   var belowFold = false;
 
-  // open menu functionality
-  $('#menu-tab').on('click', function(e){
-    var value = 0
-    if($menu.css('left') === '0px'){
-      value = -250
-      $openIcon.css('transform', 'rotate(0deg)')
-      $menuLabel.fadeOut(500)
-    }else{
-      $openIcon.css('transform', 'rotate(180deg)')
-      $menuLabel.fadeIn(500)
-    }
-
-    $menu.animate({
-      left: value
-    }, 500)
-  })
-
-  // hide menu on scroll
   $(window).on('scroll', (event) => {
     let wHeight = $window.height()
     let top = $window.scrollTop()
-
-    if(top > wHeight/2 && belowFold === false) {
-      belowFold = true
-      $menu.animate({
-        left: -300
-      }, 200)
-      $menuLabel.fadeOut()
-    }else if(top < wHeight/2 && belowFold === true){
-      belowFold = false
-      $menu.animate({
-        left: -250
-      }, 200)
+    console.log(top);
+    if(top === 0){
+      $('html').addClass('no-scroll')
     }
 
   })
 
-
 }())
+
+function begin_tour() {
+  $('#fade_in_scroll').css({
+    opacity: 0
+  })
+  $('html, body').removeClass('no-scroll')
+
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: 'smooth'
+  })
+  setTimeout(() => {
+    $('#fade_in_scroll').delay(1500).animate({
+      opacity: 1
+    }, 1000)
+    console.log('fade in');
+  }, 1000)
+
+}
