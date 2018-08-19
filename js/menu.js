@@ -11,19 +11,19 @@
     let wHeight = $window.height()
     let top = $window.scrollTop()
     if(top === 0){
-      $('html').addClass('no-scroll')
+      // $('html').addClass('no-scroll')
     }
 
   })
 
-  var tlHeight = document.getElementById('timeline').offsetHeight
-  var hashContainer = $('#hash-container')
-  for(var x = 0; x < tlHeight; x++){
-    if(x%100 === 0 && x < document.documentElement.scrollHeight - (window.innerHeight*2)){
-      console.log('appending');
-      hashContainer.append('<hr class="hashhr"><div class="hash"></div>')
-    }
-  }
+  // var tlHeight = document.getElementById('timeline').offsetHeight
+  // var hashContainer = $('#hash-container')
+  // for(var x = 0; x < tlHeight; x++){
+  //   if(x%100 === 0 && x < document.documentElement.scrollHeight - (window.innerHeight*2)){
+  //     console.log('appending');
+  //     hashContainer.append('<hr class="hashhr"><div class="hash"></div>')
+  //   }
+  // }
 }())
 
 var tour = false
@@ -32,7 +32,7 @@ function begin_tour() {
   $('#fade_in_scroll, .hash, .hashhr').css({
     opacity: 0
   })
-  $('html, body').removeClass('no-scroll')
+  // $('html, body').removeClass('no-scroll')
 
   window.scrollTo({
     top: document.documentElement.scrollHeight,

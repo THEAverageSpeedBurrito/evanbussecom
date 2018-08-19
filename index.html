@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-scroll">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Evan Busse</title>
@@ -24,6 +24,13 @@
     </script>
   </head>
   <body>
+    <div id="particles-js"></div>
+    <script src="./js/particles.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'assets/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
     <div class="full-page">
       <div class="total-center">
         <div class="profile-container">
@@ -48,14 +55,11 @@
         </center>
       </div>
     </div>
-    <div id="timeline">
-      <div id="hash-container"></div>
-      <div class="center-flex">
-        <div class="full-flex">
-          <center>hey</center>
-        </div>
-      </div>
+    <!-- <div id="timeline">
       <div class="center-flex" style="height: 100vh">
+        <div class="info-section">
+          <h4>Some Words</h4>
+        </div>
         <div class="full-flex">
           <center id="fade_in_scroll" style="opacity: 0">
             <img src="./assets/icons/up_circle.svg" alt="Scroll up" class="up-icon-bottom">
@@ -66,17 +70,6 @@
           <h1 id="bottom_h1" style="color: white">Websites don't usually <br> begin at the bottom.</h1>
           <h3 id="bottom_p" style="color: white">But some do, so this could be interesting...</h3>
         </center>
-      </div>
-    </div>
-    <!-- <div class="full-page skills">
-      <div class="skills-label">
-        <h1>Skills</h1>
-      </div>
-      <div class="canvas-container">
-        <canvas id="frontEnd"></canvas>
-      </div>
-      <div class="canvas-container">
-        <canvas id="backEnd"></canvas>
       </div>
     </div> -->
   </body>

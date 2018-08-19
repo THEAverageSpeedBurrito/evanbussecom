@@ -89,9 +89,9 @@ hr.profile {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   width: 100%;
-  height: 5000px;
+  height: auto;
   padding: 20px 30px;
   /* background: #fb93ff; */
   background: #ffffff; /* Old browsers */
@@ -133,6 +133,14 @@ hr.hashhr {
   height: auto;
 }
 
+.info-section {
+  flex-basis: 100%;
+  height: auto;
+  margin: 20px 0;
+  padding: 10px 50px;
+  color: white !important;
+}
+
 .half-flex {
   flex-basis: 50%;
   flex-grow: 1;
@@ -159,4 +167,12 @@ hr.hashhr {
 }
 .up-icon-bottom:hover {
   cursor: pointer;
+}
+
+#particles-js {
+  background: white !important;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -100
 }

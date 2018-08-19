@@ -16,7 +16,7 @@ html, body {
 }
 
 .no-scroll {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 h1 {
@@ -33,6 +33,13 @@ h1.subtitle {
 h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  color: white;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   color: white;
 }
 
