@@ -20,8 +20,8 @@ a:hover   {
 a:active  {
   text-decoration:  none;
   font-weight:      bold;
-  background-color: black;
   color: white;
+  background-color: none !important;
 }
 
 h3.p-title {

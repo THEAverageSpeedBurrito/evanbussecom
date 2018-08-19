@@ -170,7 +170,7 @@ hr.hashhr {
 }
 
 #particles-js {
-  background: white !important;
+  background: transparent !important;
   position: absolute;
   height: 100vh;
   width: 100vw;
