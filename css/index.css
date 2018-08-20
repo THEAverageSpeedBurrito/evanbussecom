@@ -83,49 +83,11 @@ hr.profile {
   padding-top: 50px;
 }
 
-/* Timeline Styles */
+/* Body Styles */
 
 #timeline {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  /* align-items: flex-end; */
-  width: 100%;
-  height: auto;
-  padding: 20px 30px;
-  /* background: #fb93ff; */
-  background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #fb93ff 40%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 0%,#fb93ff 40%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%,#fb93ff 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-#hash-container {
-  position: absolute;
-  height: 5000px;
-  width: 100px;
-  left: 0px;
-  top: 100vh;
-}
-
-.hash {
-  opacity: 0;
-  position: relative;
-  height: 4px;
-  width: 25px;
-  background: ghostwhite;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.01);
-  margin-bottom: 95px;
-  border-radius: 0 50% 50% 0;
-}
-
-hr.hashhr {
-  opacity: 0;
-  position: absolute;
-  margin-top: 1px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
   width: 100vw;
+  height: auto;
 }
 
 .full-flex {
@@ -157,16 +119,6 @@ hr.hashhr {
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.up-icon-bottom {
-  display: block;
-  animation-duration: 1s;
-  animation-name: pulse;
-  animation-iteration-count: infinite;
-}
-.up-icon-bottom:hover {
-  cursor: pointer;
 }
 
 #particles-js {
