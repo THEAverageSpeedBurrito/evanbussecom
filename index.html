@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="./css/main-styles.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/menu.css">
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script defer src="./js/snap.svg-min.js"></script> -->
     <!-- <script defer src="./js/svg.js"></script> -->
     <script defer src="./js/menu.js"></script>
@@ -56,14 +55,45 @@
       </div>
     </div>
     <div class="full-page">
-      <div class="grid-bg"></div>
-      <div class="gradient-bg"></div>
+      <div id="scene" class="total-center" style="max-width: 700px;">
+        <h1 data-depth="1">A web developer...</h1>
+        <div data-depth="1.3" class="skill-container">
+          <img src="./assets/icons/js.jpg" alt="" class="cs-logo">
+          <img src="./assets/icons/python.png" alt="" class="cs-logo">
+          <img src="./assets/icons/react.png" alt="" class="cs-logo">
+          <img src="./assets/icons/node.svg" alt="" class="cs-logo">
+        </div>
+      </div>
     </div>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
-    <!-- <script>
+    <div class="full-page">
+      <div id="scene2" class="total-center" style="max-width: 700px;">
+        <h1 data-depth=".6">I'm a graphic designer...</h1>
+        <div data-depth="1.3" class="skill-container">
+          <img src="./assets/icons/illustrator.svg" alt="" class="cs-logo">
+          <img src="./assets/icons/indesign.svg" alt="" class="cs-logo">
+          <img src="./assets/icons/photoshop.svg" alt="" class="cs-logo">
+          <img src="./assets/icons/aftereffects.svg" alt="" class="cs-logo">
+        </div>
+      </div>
+    </div>
+    <div class="full-page">
+      <div class="total-center" style="max-width: 700px;">
+        <center>
+          <h1>Most websites don't begin at the bottom.</h1>
+          <h4>You might as well scroll up to get to the good stuff.</h4>
+          <img class="chevron-up" src="./assets/icons/up_circle.svg" alt="Scroll Up" style="margin-top: 20px;">
+        </center>
+      </div>
+      <div class="grid-bg-bottom"></div>
+      <div class="gradient-bg-bottom"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
       var scene = document.getElementById('scene');
       var parallaxInstance = new Parallax(scene);
+      var scene2 = document.getElementById('scene2');
+      var parallaxInstance2 = new Parallax(scene2);
       console.log("Intitialized Paralax")
-    </script> -->
+    </script>
   </body>
 </html>
