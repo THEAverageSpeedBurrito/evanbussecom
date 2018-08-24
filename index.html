@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main-styles.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/menu.css">
+    <a href='https://www.freepik.com/free-vector/vector-illustration-of-a-mountain-landscape_1215613.htm'></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script defer src="./js/snap.svg-min.js"></script> -->
     <!-- <script defer src="./js/svg.js"></script> -->
@@ -54,30 +55,16 @@
         </center>
       </div>
     </div>
-    <div class="full-page">
-      <div id="scene" class="total-center" style="max-width: 700px;">
-        <h1 data-depth="1">A web developer...</h1>
-        <div data-depth="1.3" class="skill-container">
-          <img src="./assets/icons/js.jpg" alt="" class="cs-logo">
-          <img src="./assets/icons/python.png" alt="" class="cs-logo">
-          <img src="./assets/icons/react.png" alt="" class="cs-logo">
-          <img src="./assets/icons/node.svg" alt="" class="cs-logo">
-        </div>
+    <div class="vanilla-full" style="max-height: 700px;">
+      <div id="scene" >
+        <object data="./assets/mountains/mountains-bg.svg" type="image/svg+xml" data-depth=".2" style="width: 120vw"></object>
+        <object data="./assets/mountains/clouds2.svg" type="image/svg+xml" data-depth=".4" style="width: 120vw"></object>
+        <object data="./assets/mountains/clouds1.svg" type="image/svg+xml" data-depth=".5" style="width: 120vw"></object>
+        <object data="./assets/mountains/hills.svg" type="image/svg+xml" data-depth=".3" style="margin-top: 200px; width: 120vw"></object>
       </div>
     </div>
     <div class="full-page">
-      <div id="scene2" class="total-center" style="max-width: 700px;">
-        <h1 data-depth=".6">I'm a graphic designer...</h1>
-        <div data-depth="1.3" class="skill-container">
-          <img src="./assets/icons/illustrator.svg" alt="" class="cs-logo">
-          <img src="./assets/icons/indesign.svg" alt="" class="cs-logo">
-          <img src="./assets/icons/photoshop.svg" alt="" class="cs-logo">
-          <img src="./assets/icons/aftereffects.svg" alt="" class="cs-logo">
-        </div>
-      </div>
-    </div>
-    <div class="full-page">
-      <div class="total-center" style="max-width: 700px;">
+      <div class="total-center">
         <center>
           <h1>Most websites don't begin at the bottom.</h1>
           <h4>You might as well scroll up to get to the good stuff.</h4>
@@ -91,9 +78,9 @@
     <script>
       var scene = document.getElementById('scene');
       var parallaxInstance = new Parallax(scene);
-      var scene2 = document.getElementById('scene2');
-      var parallaxInstance2 = new Parallax(scene2);
-      console.log("Intitialized Paralax")
+      // var scene2 = document.getElementById('scene2');
+      // var parallaxInstance2 = new Parallax(scene2);
+      // console.log("Intitialized Paralax")
     </script>
   </body>
 </html>
