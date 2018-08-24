@@ -21,7 +21,7 @@ html, body {
 }
 
 .no-scroll {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
 h1.subtitle {
   margin-top: -15px;
   font-size: 19.8px;
-  color: #474747;
+  color: #474747;s
   font-weight: 400;
 }
 
@@ -129,12 +129,15 @@ button:hover {
   flex-wrap: wrap;
 }
 
+.ts-bg {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh + 15px);
+  display: inline-flex;
+}
+
 .full-width {
   width: 100%;
   height: auto;
   padding: 20px 50px;
-}
-
-.full-scene {
-  width: 100%;
 }
