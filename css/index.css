@@ -132,16 +132,6 @@ hr.profile {
   animation-iteration-count: infinite;
 }
 
-.skill-container {
-  width: 100%;
-  flex-grow: 1;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  text-align: center;
-  margin-top: 100px;
-}
-
 .cs-logo {
   max-width: 20%;
   margin: 0 5px;
@@ -155,8 +145,6 @@ hr.profile {
   margin: 0;
   width: 100%;;
   height: calc(100% + 15px);
-  /* border: 1px solid blue;
-  box-sizing: border-box; */
   left: 0;
 }
 
@@ -178,7 +166,6 @@ hr.profile {
 }
 
 .bottom-fade {
-  /* border: 1px solid black; */
   position: absolute;
   bottom: 0px;
   width: 100vw;
@@ -187,4 +174,25 @@ hr.profile {
   background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(255,255,255,1) 70%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(255,255,255,1) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+.grid-bg-bottom {
+  position: absolute;
+  z-index: -9;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/Square-Grid-Black-top.png");
+  background-size: cover;
+}
+
+.gradient-bg-bottom {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(214,214,214,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(214,214,214,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=0 ); /* IE6-9 */
 }
